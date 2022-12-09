@@ -12,6 +12,9 @@ var robuustCheckboxes = document.querySelectorAll('#rl-robuust input[type=checkb
 var begrijpelijkCheckboxes = document.querySelectorAll('#rl-begrijpelijk input[type=checkbox]');
 var bedienbaarCheckboxes = document.querySelectorAll('#rl-bedienbaar input[type=checkbox]');
 
+// Belangrijke variables
+
+const delay = 1500;
 
 // TODO: Dit kan korter
 
@@ -26,16 +29,7 @@ waarneembaarCheckboxes.forEach((checkbox) => {
 
         setTimeout(() => {
             targetElement.classList.toggle("countColor");
-        }, 2000)
-            
-        
-        // console.log(targetElement.classList.contains("countColor"))
-
-        // if (targetElement.classList.contains("countColor")){
-        //     targetElement.classList.remove("countColor");
-        // } else{
-        //     targetElement.classList.add("countColor");
-        // }
+        }, delay)
     });
 });
 
@@ -49,7 +43,7 @@ robuustCheckboxes.forEach((checkbox) => {
 
         setTimeout(() => {
             targetElement.classList.toggle("countColor-blue");
-        }, 2000)
+        }, delay)
     });
 });
 
@@ -63,7 +57,7 @@ begrijpelijkCheckboxes.forEach((checkbox) => {
 
         setTimeout(() => {
             targetElement.classList.toggle("countColor");
-        }, 2000)
+        }, delay)
     });
 });
 
@@ -77,7 +71,7 @@ bedienbaarCheckboxes.forEach((checkbox) => {
 
         setTimeout(() => {
             targetElement.classList.toggle("countColor-blue");
-        }, 2000)
+        }, delay)
     });
 });
 

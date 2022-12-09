@@ -14,6 +14,9 @@
   /* Button styling */
     --button-padding: 0.8em 1.6em;
     --button-border-radius: 0.3em;
+
+  /* Overige variables */
+		--delay: 1.5s
 }
 
 /* ------------------------------------------------ */
@@ -384,11 +387,11 @@ header #logo::after {
 .countColor{
     /* color: var(--geel); */
     /* font-size: 1.7rem; */
-    animation: countColorAnimation 2s;
+    animation: countColorAnimation var(--delay);
 }
 
 .countColor-blue{
-    animation: countColorAnimationBlue 2s;
+    animation: countColorAnimationBlue var(--delay);
 }
 
 @keyframes countColorAnimation{
