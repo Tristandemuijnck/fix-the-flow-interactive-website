@@ -1,6 +1,6 @@
 // Navigatie menu openen
-let menuBtn = document.getElementById('menu-btn');
-let primaireNav = document.getElementById('primaire-nav');
+const menuBtn = document.getElementById('menu-btn');
+const primaireNav = document.getElementById('primaire-nav');
 
 menuBtn.addEventListener('click', () => {
     primaireNav.classList.toggle("show");
@@ -101,8 +101,8 @@ function countChecks(checkbox, categorie) {
 }
 
 // Card openen alternatief
-let cardButtons = document.querySelectorAll('.rl-card-btn');
-let cardsContent = document.querySelectorAll('.rl-card-content');
+const cardButtons = document.querySelectorAll('.rl-card-btn');
+const cardsContent = document.querySelectorAll('.rl-card-content');
 
 cardButtons.forEach((cardButton) => {
     cardButton.addEventListener('click', function () {
