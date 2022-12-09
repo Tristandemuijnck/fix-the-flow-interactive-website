@@ -20,12 +20,11 @@ waarneembaarCheckboxes.forEach((checkbox) => {
         let targetElement = document.getElementById(parentElement).querySelector('#waarneembaar-count');
         targetElement.classList.toggle("countColor");
 
-        // () => {
-        //     targetElement.classList.add("countColor");
-        //     setTimeout(() => {
-
-        //     }, 2000)
-        // }
+        setTimeout(() => {
+            targetElement.classList.toggle("countColor");
+        }, 2000)
+            
+        
         // console.log(targetElement.classList.contains("countColor"))
 
         // if (targetElement.classList.contains("countColor")){
