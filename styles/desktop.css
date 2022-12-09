@@ -1,0 +1,222 @@
+/* ============================================================================= */
+/* Desktop styling ============================================================== */
+/* ============================================================================= */
+
+@media (min-width: 769px) {
+    @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap");
+
+    /* Header styling */
+    header #logo {
+        padding: 0.5em 1.2em 0.5em 3.2em;
+    }
+
+    #logo svg {
+        left: 15.8em;
+    }
+
+    #after-curve::before {
+        left: 15.8em;
+    }
+
+    /* Navigatie */
+    .topnav{
+        width: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0.6em;
+        padding-right: 2em;
+    }
+
+    .topnav a{
+        padding: 0.8em 0 0.8em 0.5em;
+    }
+
+    #primaire-nav{
+        display: block;      
+    }
+
+    .menu-toggle{
+        display: none;
+    }
+
+    /* Hero banner */
+    #hero{
+        padding: 5em 2em;
+        align-items: flex-start;
+    }
+
+    .hero-content{
+        width: 100%;
+    }
+
+    .hero-title{
+        width: auto;
+    }
+
+    .hero-subtitle{
+        width: auto;
+        max-width: 30rem;
+    }
+
+    .access-icon{
+        width: 10em;
+        height: auto;
+    }
+
+    .access-icon2{
+        width: 8em;
+        height: auto;
+    }
+
+    /* Richtlijnen section */
+    #richtlijnen{
+        background-color: var(--wit);
+        padding: 2em 0em;
+    }
+
+    .spacing-span{
+        height: 5em;
+        margin-top: -5em;
+    }
+
+    #waarneembaar, #begrijpelijk{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2em 2em 2em 0;
+    }
+
+    #robuust, #bedienbaar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2em 0 2em 2em;
+    }
+
+    .title-white, .title-magenta{
+        color: var(--magenta);
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+    .p-white{
+        background: var(--gradient-magenta);
+        padding: 2.5em 2.5em 2.5em 4em;
+        border: none;
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        max-width: 50%;
+        color: var(--wit);
+    }
+
+    .p-magenta{
+        background: var(--gradient-magenta);
+        padding: 2.5em 4em 2.5em 2.5em;
+        border: none;
+        border-top-left-radius: 2em;
+        border-bottom-left-radius: 2em;
+        max-width: 50%;
+        color: var(--wit);
+    }
+
+    .p-magenta strong a, .p-white strong a{
+        color: var(--wit);
+    }
+
+    /* Waarom section */
+    #waarom-toegankelijk{
+        padding: 2em;
+    }
+
+    #waarom-toegankelijk>.title-magenta{
+        color: var(--wit);
+    }
+
+    .cards{
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow-x: auto;
+        margin-bottom: 2em;
+        margin: 2em 3%;
+    }
+
+    .card-title{
+        margin-bottom: 0.6em;
+    }
+
+    .card-text{
+        max-width: 35rem;
+        min-width: 15rem;
+    }
+
+    /* Call to action hero */
+    .check-container{
+        align-items: center;
+        margin-top: 1em;
+    }
+
+    .call-to-action{
+        font-size: 2.3rem;
+        padding-left: 3%;
+    }
+
+    .cta-btn{
+        margin-right: 3%;
+        font-size: 1.5rem;
+    }
+
+    /* Footer */
+    .contact-container{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+/*-------------------------RICHTLIJNEN-------------------------------*/
+
+    .rl-header{
+        width: 85%;
+        margin: 1em auto;
+    }
+
+    .rl-cards{
+        width: 85%;
+        max-width: 85%;
+        margin: 0 auto;
+        padding: 2em 0;
+    }
+
+    .rl-card{
+        padding: 1em 2em;
+        box-shadow: 0px 7px 5px -7px #000000, 0px 0px 3px 2px rgb(0 0 0 / 0%);
+    }
+
+    .rl-card-extra{
+        flex-direction: row;
+        column-gap: 1em;
+    }
+
+    .rl-card-uitleg{
+        width: 50%;
+        max-width: 50%;
+    }
+
+    .rl-card-tips{
+        width: 50%;
+        max-width: 50%;
+    }
+
+    /* Back to top button */
+    .top-arrow-outer{
+        padding: 1em 1.2em;
+        border-radius: 1.6em;        
+    }
+
+    .top-arrow-inner{
+        width: 2em;
+    }
+    
+} /* Einde desktop styling */
