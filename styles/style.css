@@ -385,8 +385,6 @@ header #logo::after {
 }
 
 .countColor{
-    /* color: var(--geel); */
-    /* font-size: 1.7rem; */
     animation: countColorAnimation var(--delay);
 }
 
@@ -397,16 +395,15 @@ header #logo::after {
 @keyframes countColorAnimation{
     0% {
         color: var(--magenta);
-        font-size: 1rem;
+				font-size: 1rem;
     }
     50% {
         color: var(--geel);
-        font-size: 1.7rem;
-
+				font-size: 1.7rem;
     }
     100% {
         color: var(--magenta);
-        font-size: 1rem;
+				font-size: 1rem;
     }
 }
 
