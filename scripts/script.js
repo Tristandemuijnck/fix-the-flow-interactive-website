@@ -7,10 +7,10 @@ menuBtn.addEventListener('click', () => {
 });
 
 // Checkboxes tellen
-var waarneembaarCheckboxes = document.querySelectorAll('#rl-waarneembaar input[type=checkbox]');
-var robuustCheckboxes = document.querySelectorAll('#rl-robuust input[type=checkbox]');
-var begrijpelijkCheckboxes = document.querySelectorAll('#rl-begrijpelijk input[type=checkbox]');
-var bedienbaarCheckboxes = document.querySelectorAll('#rl-bedienbaar input[type=checkbox]');
+const waarneembaarCheckboxes = document.querySelectorAll('#rl-waarneembaar input[type=checkbox]');
+const robuustCheckboxes = document.querySelectorAll('#rl-robuust input[type=checkbox]');
+const begrijpelijkCheckboxes = document.querySelectorAll('#rl-begrijpelijk input[type=checkbox]');
+const bedienbaarCheckboxes = document.querySelectorAll('#rl-bedienbaar input[type=checkbox]');
 
 // Belangrijke variables
 
