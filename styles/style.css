@@ -387,6 +387,10 @@ header #logo::after {
     animation: countColorAnimation 2s;
 }
 
+.countColor-blue{
+    animation: countColorAnimationBlue 2s;
+}
+
 @keyframes countColorAnimation{
     0% {
         color: var(--magenta);
@@ -399,6 +403,22 @@ header #logo::after {
     }
     100% {
         color: var(--magenta);
+        font-size: 1rem;
+    }
+}
+
+@keyframes countColorAnimationBlue{
+    0% {
+        color: var(--wit);
+        font-size: 1rem;
+    }
+    50% {
+        color: var(--geel);
+        font-size: 1.7rem;
+
+    }
+    100% {
+        color: var(--wit);
         font-size: 1rem;
     }
 }

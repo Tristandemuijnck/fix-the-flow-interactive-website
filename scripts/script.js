@@ -12,6 +12,10 @@ var robuustCheckboxes = document.querySelectorAll('#rl-robuust input[type=checkb
 var begrijpelijkCheckboxes = document.querySelectorAll('#rl-begrijpelijk input[type=checkbox]');
 var bedienbaarCheckboxes = document.querySelectorAll('#rl-bedienbaar input[type=checkbox]');
 
+
+// TODO: Dit kan korter
+
+// Checkbox animatie
 waarneembaarCheckboxes.forEach((checkbox) => {
     checkbox.addEventListener('change', function () {
         countChecks(checkbox, this.closest(".rl-cards").parentElement.id);
@@ -39,6 +43,13 @@ robuustCheckboxes.forEach((checkbox) => {
     checkbox.addEventListener('change', function () {
         countChecks(checkbox, this.closest(".rl-cards").parentElement.id);
         this.closest(".rl-card").classList.toggle("rl-card-border");
+        let parentElement = this.closest(".rl-cards").parentElement.id;
+        let targetElement = document.getElementById(parentElement).querySelector('#robuust-count');
+        targetElement.classList.toggle("countColor-blue");
+
+        setTimeout(() => {
+            targetElement.classList.toggle("countColor-blue");
+        }, 2000)
     });
 });
 
@@ -46,6 +57,13 @@ begrijpelijkCheckboxes.forEach((checkbox) => {
     checkbox.addEventListener('change', function () {
         countChecks(checkbox, this.closest(".rl-cards").parentElement.id);
         this.closest(".rl-card").classList.toggle("rl-card-border");
+        let parentElement = this.closest(".rl-cards").parentElement.id;
+        let targetElement = document.getElementById(parentElement).querySelector('#begrijpelijk-count');
+        targetElement.classList.toggle("countColor");
+
+        setTimeout(() => {
+            targetElement.classList.toggle("countColor");
+        }, 2000)
     });
 });
 
@@ -53,6 +71,13 @@ bedienbaarCheckboxes.forEach((checkbox) => {
     checkbox.addEventListener('change', function () {
         countChecks(checkbox, this.closest(".rl-cards").parentElement.id);
         this.closest(".rl-card").classList.toggle("rl-card-border");
+        let parentElement = this.closest(".rl-cards").parentElement.id;
+        let targetElement = document.getElementById(parentElement).querySelector('#bedienbaar-count');
+        targetElement.classList.toggle("countColor-blue");
+
+        setTimeout(() => {
+            targetElement.classList.toggle("countColor-blue");
+        }, 2000)
     });
 });
 
