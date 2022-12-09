@@ -4,7 +4,7 @@
 Toolgankelijkheid - Een overzicht van toegankelijkheidsverbeteringen voor het verbeteren van toegankelijkheid op een website of app.
 
 ## Beschrijving
-Dit is de repository van mijn uitvoering van look-and-feel-corporate-identity - Vervoerregio Amsterdam.
+Dit is de repository van mijn uitvoering van fix-the-flow-interactive-website - Vervoerregio Amsterdam.
 
 De tool is gemaakt voor de volgende user stories: 
 > "Als organisatie wil ik een overzicht van toegankelijkheidsverbeteringen kunnen bekijken, zodat ik een gevoel kan krijgen wat er moet gebeuren om mijn website/app toegankelijker te maken op het terrein van waarneembaarheid, robuustheid, begrijpelijkheid en bedienbaarheid."
