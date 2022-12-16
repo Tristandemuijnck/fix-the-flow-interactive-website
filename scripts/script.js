@@ -53,7 +53,7 @@ function checkboxCountAndHighlight(checkbox, parentElement, category) {
     const progress = checkbox.closest(".rl-cards").querySelectorAll('input[type=checkbox]:checked').length;
     checkbox.closest(".rl-card").classList.toggle("rl-card-border");
 
-    category === "waarneembaar" || category === "begrijpelijk" ? countHighlighter(category, parentElement, progress, "countColor") : countHighlighter(category, parentElement, progress, "countColor-blue")
+    category === "waarneembaar" || category === "begrijpelijk" ? countHighlighter(category, parentElement, progress, "highlightColor") : countHighlighter(category, parentElement, progress, "highlightColor-blue")
 }
 
 // ==============================================================================================================================================================

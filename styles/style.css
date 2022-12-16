@@ -384,11 +384,11 @@ header #logo::after {
     font-size: 1rem;
 }
 
-.countColor{
+.highlightColor{
     animation: countColorAnimation var(--delay);
 }
 
-.countColor-blue{
+.highlightColor-blue{
     animation: countColorAnimationBlue var(--delay);
 }
 
