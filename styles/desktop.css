@@ -40,6 +40,10 @@
         display: none;
     }
 
+    .menu-label{
+        display: none;
+    }
+
     /* Hero banner */
     #hero{
         padding: 5em 2em;
