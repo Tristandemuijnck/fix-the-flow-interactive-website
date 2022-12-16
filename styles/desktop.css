@@ -36,6 +36,10 @@
         display: block;      
     }
 
+    #primaire-nav ul{
+        display: flex;
+    }
+
     .menu-toggle{
         display: none;
     }
