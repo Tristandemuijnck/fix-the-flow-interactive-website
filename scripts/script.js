@@ -12,9 +12,9 @@ const cardsContent = document.querySelectorAll('.rl-card-content');
 
 cardButtons.forEach((cardButton) => {
     cardButton.addEventListener('click', function () {
-        let parentElement = this.closest('.rl-card-content-wrapper');
-        let targetElement = parentElement.querySelector('.rl-card-extra');
-        let btnElement = parentElement.querySelector('.rl-card-btn');
+        const parentElement = this.closest('.rl-card-content-wrapper');
+        const targetElement = parentElement.querySelector('.rl-card-extra');
+        const btnElement = parentElement.querySelector('.rl-card-btn');
         
         targetElement.classList.toggle("showCard");
         
@@ -35,25 +35,25 @@ const checkboxes = document.querySelectorAll('input[type=checkbox]');
 checkboxes.forEach((checkbox) => {
     checkbox.addEventListener('change', function () {
         const parentElement = this.closest(".rl-cards").parentElement.id;
-        let categorie = parentElement.replace('rl-', '');
-        checkboxCountAndHighlight(checkbox, parentElement, categorie)
+        const category = parentElement.replace('rl-', '');
+        checkboxCountAndHighlight(checkbox, parentElement, category)
     });
 });
 
-function countHighlighter(categorieNaam, parentElement, progress, className){
-    document.getElementById(categorieNaam + "-count").innerHTML = progress;
-    document.getElementById(parentElement).querySelector("#"+categorieNaam+"-count").classList.toggle(className);
+function countHighlighter(categoryName, parentElement, progress, className){
+    document.getElementById(categoryName + "-count").innerHTML = progress;
+    document.getElementById(parentElement).querySelector("#"+categoryName+"-count").classList.toggle(className);
     setTimeout(() => {
-        document.getElementById(parentElement).querySelector("#"+categorieNaam+"-count").classList.toggle(className);
+        document.getElementById(parentElement).querySelector("#"+categoryName+"-count").classList.toggle(className);
     }, delay)
     
 }
 
-function checkboxCountAndHighlight(checkbox, parentElement, categorie) {
-    let progress = checkbox.closest(".rl-cards").querySelectorAll('input[type=checkbox]:checked').length;
+function checkboxCountAndHighlight(checkbox, parentElement, category) {
+    const progress = checkbox.closest(".rl-cards").querySelectorAll('input[type=checkbox]:checked').length;
     checkbox.closest(".rl-card").classList.toggle("rl-card-border");
 
-    categorie === "waarneembaar" || categorie === "begrijpelijk" ? countHighlighter(categorie, parentElement, progress, "countColor") : countHighlighter(categorie, parentElement, progress, "countColor-blue")
+    category === "waarneembaar" || category === "begrijpelijk" ? countHighlighter(category, parentElement, progress, "countColor") : countHighlighter(category, parentElement, progress, "countColor-blue")
 }
 
 // ==============================================================================================================================================================
