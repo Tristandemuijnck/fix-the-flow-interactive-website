@@ -13,11 +13,30 @@ De tool is gemaakt voor de volgende user stories:
 
 > "Als vervoerregio wil ik de urgentie van de wettelijke verplichting duidelijk maken aan lezers"
 
+> "Als gebruiker wil ik een soort interactieve checklist kunnen bijhouden over de wettelijke toegankelijkheidsrichtlijnen voor mijn eigen website"
+
 ### Preview
 <img src="https://user-images.githubusercontent.com/43402897/211406138-d0321700-9f5e-4970-8792-a123b1fc96d0.png" width=700>
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+## :mag: Kenmerken
+
+### :page_facing_up: HTML
+
+Voor de layout maak ik gebruik van: 
+
+  `<main>`
+  `<section>`
+  `<article>`
+  `<nav>`
+  `<footer>`
+  
+### :art: CSS
+
+Een belangrijk css onderdeel 
+
+### :loop: JavaScript
+
+Een belangrijk stukje JavaScript is de code voor 
 
 ## Live versie
 Voor een live versie van het project: https://tristanva.student.fdnd.nl/
