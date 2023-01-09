@@ -32,11 +32,63 @@ Voor de layout maak ik gebruik van:
   
 ### :art: CSS
 
-Een belangrijk css onderdeel 
+Een aantal belangrijke css onderdelen zijn de keyframes. Deze worden gebruikt voor het maken van de animaties.
+
+```
+@keyframes countColorAnimation{
+    0% {
+        color: var(--magenta);
+        transform: scale(1) 
+    }
+    50% {
+        color: var(--geel);
+        transform: scale(1.5) 
+    }
+    100% {
+        color: var(--magenta);
+        transform: scale(1) 
+    }
+}
+```
+
 
 ### :loop: JavaScript
 
-Een belangrijk stukje JavaScript is de code voor 
+Een belangrijk stukje JavaScript is de code voor het animeren van de checklist counter.
+
+Eerst selecteer ik alle checkboxes in de checklist.
+```
+const checkboxes = document.querySelectorAll('input[type=checkbox]');
+```
+
+Vervolgens zet ik op elke checkbox een change eventlistener.
+```
+checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener('change', function () {
+        const parentElement = this.closest(".rl-cards").parentElement.id;
+        const category = parentElement.replace('rl-', '');
+        checkboxCountAndHighlight(checkbox, parentElement, category)
+    });
+});
+```
+
+Dan check ik bij welke counter de checkbox hoort om vervolgens de counter aan te passen en een animatie toe te voegen.
+```
+function checkboxCountAndHighlight(checkbox, parentElement, category) {
+    const progress = checkbox.closest(".rl-cards").querySelectorAll('input[type=checkbox]:checked').length;
+    checkbox.closest(".rl-card").classList.toggle("rl-card-border");
+
+    category === "waarneembaar" || category === "begrijpelijk" ? countHighlighter(category, parentElement, progress, "highlightColor") : countHighlighter(category, parentElement, progress, "highlightColor-blue")
+}
+
+function countHighlighter(categoryName, parentElement, progress, className){
+    document.getElementById(categoryName + "-count").innerHTML = progress;
+    document.getElementById(parentElement).querySelector("#"+categoryName+"-count").classList.toggle(className);
+    setTimeout(() => {
+        document.getElementById(parentElement).querySelector("#"+categoryName+"-count").classList.toggle(className);
+    }, delay)
+}
+```
 
 ## Live versie
 Voor een live versie van het project: https://tristanva.student.fdnd.nl/
